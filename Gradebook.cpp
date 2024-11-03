@@ -1,9 +1,23 @@
 #include <iostream>
+#include <exception>
 #include "Gradebook.h"
 
+bool studentVectorContains(vector<Student> vec, string fName, string lName, string id){
+    for(Student s : vec){
+        if(s.getFName() == fName || s.getLName() == lName || s.getId() == id){
+            return true;
+        }
+    }
+    return false;
+}
+
 void Gradebook::addStudent(string fName, string lName, string id) {
-    Student s(fName, lName, id);
-    this->students.push_back(s);
+    if(studentVectorContains(this->students, fName, lName, id)){
+        throw invalid_argument("This student already exits.");
+    }else {
+        Student s(fName, lName, id);
+        this->students.push_back(s);
+    }
 }
 
 void Gradebook::addAssignment(string name, int points) {
