@@ -39,3 +39,7 @@ Student Gradebook::getStudentByID(string id) {
     }
     return Student("error", "error", "error");
 }
+
+vector<Student> Gradebook::getStudents() {
+    return this->students;
+}

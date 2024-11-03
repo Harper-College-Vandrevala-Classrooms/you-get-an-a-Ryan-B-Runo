@@ -1,6 +1,5 @@
 #include <string>
 #include <vector>
-#include <rpcdce.h>
 #include "Student.h"
 
 using namespace std;
@@ -16,6 +15,7 @@ public:
     void addStudent(string fName, string lName, string id);
     void addAssignment(string name, int points);
     Student getStudentByID(string id);
+    vector<Student> getStudents();
     void enterGrade(Student s, int grade);
     string report();
 };
