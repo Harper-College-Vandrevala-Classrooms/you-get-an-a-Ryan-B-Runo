@@ -9,4 +9,5 @@ add_executable(you_get_an_a_Ryan_B_Runo
         Gradebook.cpp
         Gradebook.h
         Student.h
-        Student.cpp)
+        Student.cpp
+        main.cpp)

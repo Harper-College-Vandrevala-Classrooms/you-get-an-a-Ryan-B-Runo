@@ -63,6 +63,13 @@ build CMakeFiles/you_get_an_a_Ryan_B_Runo.dir/Student.cpp.obj: CXX_COMPILER__you
   OBJECT_DIR = CMakeFiles\you_get_an_a_Ryan_B_Runo.dir
   OBJECT_FILE_DIR = CMakeFiles\you_get_an_a_Ryan_B_Runo.dir
 
+build CMakeFiles/you_get_an_a_Ryan_B_Runo.dir/main.cpp.obj: CXX_COMPILER__you_get_an_a_Ryan_B_Runo_unscanned_Debug C$:/dev/CSC122/you-get-an-a-Ryan-B-Runo/main.cpp || cmake_object_order_depends_target_you_get_an_a_Ryan_B_Runo
+  DEP_FILE = CMakeFiles\you_get_an_a_Ryan_B_Runo.dir\main.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/dev/CSC122/you-get-an-a-Ryan-B-Runo/.
+  OBJECT_DIR = CMakeFiles\you_get_an_a_Ryan_B_Runo.dir
+  OBJECT_FILE_DIR = CMakeFiles\you_get_an_a_Ryan_B_Runo.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target you_get_an_a_Ryan_B_Runo
@@ -71,7 +78,7 @@ build CMakeFiles/you_get_an_a_Ryan_B_Runo.dir/Student.cpp.obj: CXX_COMPILER__you
 #############################################
 # Link the executable you_get_an_a_Ryan_B_Runo.exe
 
-build you_get_an_a_Ryan_B_Runo.exe: CXX_EXECUTABLE_LINKER__you_get_an_a_Ryan_B_Runo_Debug CMakeFiles/you_get_an_a_Ryan_B_Runo.dir/Gradebook.cpp.obj CMakeFiles/you_get_an_a_Ryan_B_Runo.dir/Student.cpp.obj
+build you_get_an_a_Ryan_B_Runo.exe: CXX_EXECUTABLE_LINKER__you_get_an_a_Ryan_B_Runo_Debug CMakeFiles/you_get_an_a_Ryan_B_Runo.dir/Gradebook.cpp.obj CMakeFiles/you_get_an_a_Ryan_B_Runo.dir/Student.cpp.obj CMakeFiles/you_get_an_a_Ryan_B_Runo.dir/main.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\you_get_an_a_Ryan_B_Runo.dir

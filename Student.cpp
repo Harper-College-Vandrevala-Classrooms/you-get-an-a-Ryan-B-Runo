@@ -25,3 +25,15 @@ map<string, pair<int, int>> Student::getAssignments() {
 string Student::getId() {
     return this->id;
 }
+
+const string &Student::getFName() const {
+    return fName;
+}
+
+const string &Student::getLName() const {
+    return lName;
+}
+
+
+Student::Student(const string &fName, const string &lName, const string &id) : fName(fName), lName(lName), id(id) {}
+
