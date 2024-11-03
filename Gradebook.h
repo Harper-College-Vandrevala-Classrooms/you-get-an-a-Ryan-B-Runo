@@ -13,7 +13,7 @@ private:
     vector<string> assignments;
 public:
     void addStudent(string fName, string lName, string id);
-    void addAssignment(string name, int points);
+    void addAssignment(const string& name, int points);
     Student getStudentByID(string id);
     vector<Student> getStudents();
     void enterGrade(Student s, int grade);

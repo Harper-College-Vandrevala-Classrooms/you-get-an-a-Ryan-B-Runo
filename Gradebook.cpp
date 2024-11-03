@@ -20,9 +20,9 @@ void Gradebook::addStudent(string fName, string lName, string id) {
     }
 }
 
-void Gradebook::addAssignment(string name, int points) {
+void Gradebook::addAssignment(const string &name, int points) {
     try{
-        for(Student student : students){
+        for(Student &student : this->students){
             student.assign(name, points);
         }
         this->assignments.push_back(name);
