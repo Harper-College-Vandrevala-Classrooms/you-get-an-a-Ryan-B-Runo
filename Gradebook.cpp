@@ -31,15 +31,23 @@ void Gradebook::addAssignment(const string &name, int points) {
     }
 }
 
-Student Gradebook::getStudentByID(string id) {
-    for(Student student : students){
-        if(student.getId() == id){
-            return student;
+Student * Gradebook::getStudentByFullName(string name) {
+    for(Student &student : this->students){
+        if(student.getFName() + " " + student.getLName() == name){
+            return &student;
         }
     }
-    return Student("error", "error", "error");
+    return nullptr;
 }
 
 vector<Student> Gradebook::getStudents() {
     return this->students;
+}
+
+void Gradebook::enterGrade(string fullName, string assignmentName, int grade) {
+    if(getStudentByFullName(fullName) != nullptr){
+        getStudentByFullName(fullName)->setGrade(assignmentName, grade);
+    }else{
+        throw invalid_argument("This student does not exist.");
+    }
 }

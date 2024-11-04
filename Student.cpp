@@ -34,6 +34,4 @@ const string &Student::getLName() const {
     return lName;
 }
 
-
 Student::Student(const string &fName, const string &lName, const string &id) : fName(fName), lName(lName), id(id) {}
-
