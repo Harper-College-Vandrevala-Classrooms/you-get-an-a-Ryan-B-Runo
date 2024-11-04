@@ -14,7 +14,7 @@ private:
 public:
     void addStudent(string fName, string lName, string id);
     void addAssignment(const string& name, int points);
-    Student * getStudentByFullName(string name);
+    Student *getStudentByFullName(string name);
     vector<Student> getStudents();
     void enterGrade(string fullName, string assignmentName, int grade);
     string report();

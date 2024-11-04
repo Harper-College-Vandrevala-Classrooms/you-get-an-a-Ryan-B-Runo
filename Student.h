@@ -21,9 +21,7 @@ public:
     string getId();
     pair<int, int> getAssignment(string name);
     const string &getFName() const;
-
     const string &getLName() const;
-
 };
 
 #endif //YOU_GET_AN_A_RYAN_B_RUNO_STUDENT_H
