@@ -40,5 +40,9 @@ int main(){
         }
     }
 
+    cout << "--------------------------" << endl;
+
+    cout << gradebook.report() << endl;
+
     return 0;
 }

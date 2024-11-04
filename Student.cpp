@@ -35,3 +35,12 @@ const string &Student::getLName() const {
 }
 
 Student::Student(const string &fName, const string &lName, const string &id) : fName(fName), lName(lName), id(id) {}
+
+pair<int, int> Student::getAssignment(string name) {
+    for(const auto &pair : this->assignments){
+        if(pair.first == name){
+            return pair.second;
+        }
+    }
+    return pair<int, int>(-1, -1);
+}
